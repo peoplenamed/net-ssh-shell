@@ -75,7 +75,7 @@ module Net
       end
 
       def execute!(command, &callback)
-        execute(command, &callback)
+        process = execute(command, &callback)
         wait!
 	return process
       end
